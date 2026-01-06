@@ -1,0 +1,51 @@
+# requirements.txt
+# Python Dependencies for Online Image Background Removal System Using Spark
+
+# Core Dependencies
+pyspark==3.5.0
+kafka-python==2.0.2
+opencv-python==4.9.0.80
+numpy==1.26.4
+Pillow==10.2.0
+
+# Background Removal (RemBG with U2-Net)
+rembg==2.0.55
+onnx==1.16.0
+onnxruntime==1.17.1
+mediapipe==0.10.31
+# For GPU acceleration (optional):
+# onnxruntime-gpu==1.16.2
+
+# Deep Learning Frameworks (for RemBG)
+torch==2.2.2
+torchvision==0.17.2
+
+# Monitoring & Metrics
+prometheus-client==0.18.0
+pymetrics==0.21.1
+
+# Utilities
+tqdm==4.66.1           # Progress bars
+pyyaml==6.0.1         # Config files
+click==8.1.7          # CLI builder
+python-dotenv==1.0.0  # Environment variables
+
+# Testing
+pytest==7.4.3
+pytest-cov==4.1.0
+pytest-xdist==3.5.0   # Parallel testing
+
+# Development
+black==24.1.0        # Code formatter
+pylint==3.1.0         # Code linter
+mypy==1.8.0          # Type checker
+ipython==8.20.0       # Interactive shell
+
+# Logging & Debugging
+python-json-logger==2.0.7
+colorlog==6.8.0
+
+# Optional: Kubernetes & Cloud Deployment
+# kubernetes==28.0.0
+# boto3==1.34.2        # AWS S3
+# google-cloud-storage==2.10.0  # Google Cloud
